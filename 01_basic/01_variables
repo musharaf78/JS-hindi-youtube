@@ -2,6 +2,7 @@ const accountId = 144553
 let accountEmail = "mushraf@gmail.com"
 var accountpassword = "12345"
 accountcity = "jaipur"
+let accountstate;
 
 // accountId = 2 not allowed
 
@@ -10,4 +11,8 @@ accountpassword = "212121"
 accountcity = "patna"
 
 console.log(accountId);
-console.table([accountId, accountEmail, accountpassword, accountcity])
+
+
+// prefer not to use var
+// because of issue in block scope and functional scope
+console.table([accountId, accountEmail, accountpassword, accountcity, accountstate])
